@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>[[title]]</title>
+        <style>
+            html {
+                background: #EED;
+                margin: 0;
+                padding: 0;
+                height:100%;
+            }
+            body {
+                background: #FFE;
+                max-width:960px;
+                font-size:1em;
+                font-family:sans-serif;
+                margin:auto;
+                padding:1em;
+                color:#665;
+                border:1px solid #998;
+                border-top: none;
+                border-bottom: none;
+                min-height:100%;
+            }
+            h1, h2, h3 {
+                font-family: 'Segoe UI', sans-serif;
+                font-weight:lighter;
+                color:#000;
+            }
+            h1 {
+                font-size: 2em;
+                margin-bottom: 0;
+            }
+            h2 {
+                margin-top: 0;
+                font-size: 1.4em;
+                font-style:italic;
+            }
+            h3 {
+                font-size: 1.25em;
+            }
+            .color-block {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                border:5px solid #BBA;
+            }
+            ul {
+                list-style: none;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>[[title]]</h1>
+        [%hasSubtitle
+        <h2>[[subtitle]]</h2>
+        %]
+        <ul>
+            [{items
+            <li>
+                <h3>[[title]]</h3>
+                <p>[[description]]</p>
+                <div class="colors">
+                    [{colors
+                        <span class="color-block" style="background:[[color]]"></span>
+                    }]
+                </div>
+            </li>
+            }]
+        </ul>
+    </body>
+</html>
