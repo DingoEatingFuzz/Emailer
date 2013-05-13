@@ -1,6 +1,6 @@
-# Emailer - A simple and pointless template system for .NET
+# Emailer: A simple template system for .NET
 
-**Disclaimer:** I wrote this before I knew Mustache existed. There isn't a whole lot going on here that mustache doesn't also do and do better.
+*Disclaimer: I wrote this before I knew Mustache existed. There isn't a whole lot going on here that mustache doesn't do better.*
 
 ## Overview
 Emailer is a class that takes advantage of the fun stuff introduced in .NET 4&mdash;mainly `dynamic` and `ExpandoObject`. These two tools allow for an infinitely deep object evaluated at runtime (which is exactly what we want). This infinitely deep object is the `data` property of an `Emailer` object.
